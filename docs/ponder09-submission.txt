@@ -1,0 +1,43 @@
+After completing the assignment, please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your web application:
+
+https://cs313-ponders.herokuapp.com/
+
+2. Copy and paste the URL for your source code repository (e.g., GitHub):
+
+https://github.com/rasputtim/cs313-nodesj-ponders.git
+
+3. Briefly list and describe the elements of the application that are functioning. Include any special instructions about how to login and/or use your application.
+
+Everytinhing is working.
+In the initial page the users receive a form to fill with weight and choose the type of correspondence.
+The server receive this information, calcs the price and sends back to the user another page where the results are shown.
+
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+
+HOw to work with templates in ejs and modules in Node.js. I hve created a module and exported the functions that made the calculations.
+This is nice because exporting functions, we can use then anywhere we want. 
+
+6. In your own words, briefly describe the concept of a callback function and why it is useful.
+
+As far as I understood, in Javascript, Any function that is passed as an argument is called a callback function. 
+In Javascript they are useful because Javascript is a event Driven language. 
+So we cannot create functions and hope they will be executed one after another.
+With callbacks we can make sure certain code doesn't execute until other code has already finished its execution.
+
+7. Please select the category you feel best describes your assignment: 5
+1 - Some attempt was made
+2 - Developing, but significantly deficient
+3 - Slightly deficient, but still mostly adequate
+4 - Meets requirements
+5 - Shows creativity and excels above and beyond requirements
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+I used templates to make sure the headers and menus are the same in all pages.
+And a good looking page with bootstrap.
