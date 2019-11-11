@@ -1,0 +1,41 @@
+<html>
+    <% include header.ejs %>
+    <body class="container">
+        <div class="page-header">
+                <h1>Simple Weight-System</h1>
+        </div>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <% include navbar.ejs %>
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container row">
+           <h1>The Weight of your correspondence is: <%= weight %></h1>
+           <%
+           var typeString = "";
+           switch(Number(type)){
+                    case 0:
+                    break;
+                    case 1:
+                        typeString = "Letters (Stamped)";
+                        break;
+                    case 2:
+                        typeString = "Letters (Metered)";
+                        break;
+                    case 3:
+                        typeString = "Large Envelopes (Flats)";
+                        break;
+                    case 4:
+                        typeString = "First-Class Package Service—Retail";
+                        break;
+
+           }
+           %>
+           <h1>The Type of your correspondence is: <%= typeString %></h1>
+           <h1>The Price To send it is: <%= price %></h1>
+        </div>
+    </body>
+</html>
