@@ -28,6 +28,9 @@ app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+require('./ponder09/routes')(app);
+require('./ponder10/routes')(app);
+
 
 //var index = require('./routes/index');
 //app.use('/', index);
@@ -36,21 +39,11 @@ app.get('/', (req, res) => {
     res.redirect('/ponder09');
 });
 
-
-
-require('./ponder09/routes')(app);
-///////////////////PONDER09////////////////////////////
-// route for user Login
-
-
-/////////////  END PONDER 09 ////////////////////
 // route for user's dashboard
-app.get('/dashboard', (req, res) => {
-    if (req.session.user && req.cookies.user_sid) {
-        res.render('dashboard');
-    } else {
-        res.redirect('/login');
-    }
+app.get('/ponder10', (req, res) => {
+    
+        res.render('ponder10/p10form');
+
 });
 
 
